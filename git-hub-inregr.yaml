@@ -1,0 +1,11 @@
+name: DevOps-Local-Check
+
+on: push
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run 42.py
+        run: python3 42.py

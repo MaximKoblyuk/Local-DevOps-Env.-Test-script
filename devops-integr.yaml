@@ -1,0 +1,10 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+  - script: python3 42.py
+    displayName: 'Run local environment check script'
